@@ -1,0 +1,274 @@
+/*Estilo*/
+.contenido-contacto{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/*1- Seccion Hero*/
+
+.hero-seccion-contacto{
+    background-color: var(--color-tarjeta);
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: var(--sombra-suave);
+    border-left: 6px solid var(--color-acento-hover);
+}
+
+.hero-tarjeta-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-texto-contacto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-imagen-contacto{
+    flex: 0 0 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imagen-contacto img{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.etiqueta-contacto{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.hero-seccion-contacto h2{
+    font-size: 2.2rem;
+    color: var(--color-principal);
+    line-height: 1.25;
+}
+
+.hero-seccion-contacto h3{
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-acento-hover);
+}
+
+.hero-seccion-contacto p{
+    font-size: 1.05rem;
+    color: var(--color-texto);
+    line-height: 1.7;
+}
+
+/*2- Correo*/
+
+.contacto-seccion-correo{
+    background-color: var(--color-tarjeta);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: var(--sombra-suave);
+}
+
+.contacto-nivel{
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-texto-suave);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contacto-bloque h3{
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.contacto-bloque h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-acento-hover);
+    border-radius: 2px;
+}
+
+.contacto-bloque p{
+    font-size: 1.05rem;
+    color: var(--color-texto);
+    line-height: 1.7;
+}
+
+.contacto-bloque .correo-texto{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-acento-hover);
+    margin: 10px 0 20px;
+    word-break: break-all;
+}
+
+/*Botón del correo*/
+
+.btn-correo{
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--color-acento-hover);
+    color: var(--color-blanco);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-correo:hover{
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+}
+
+/*3- Tarjetas Pasos*/
+
+.seccion-pasos .seccion-titulo{
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.seccion-pasos .seccion-subtitulo{
+    text-align: center;
+    color: var(--color-texto-suave);
+    margin-bottom: 35px;
+}
+
+.contenedor-pasos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*Estructura Tarjeta*/
+
+.tarjeta-paso{
+    flex: 1;
+    min-width: 260px;
+    max-width: 360px;
+    background-color: var(--color-tarjeta);
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: var(--sombra-suave);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tarjeta-paso:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-hover);
+}
+
+/*Número / Badge*/
+
+.paso-numero{
+    align-self: flex-start;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+/*Contenido de la tarjeta*/
+
+.paso-titulo{
+    font-size: 1.3rem;
+    color: var(--color-principal);
+    font-weight: 700;
+    margin: 0;
+}
+
+.paso-descripcion{
+    font-size: 0.95rem;
+    color: var(--color-texto-suave);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*4- Adaptabilidad Movil*/
+
+@media (max-width: 900px){
+    .hero-tarjeta-contacto{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-imagen-contacto{
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-imagen-contacto img{
+        max-width: 240px;
+    }
+
+    .tarjeta-paso{
+        max-width: 100%;
+    }
+
+    .paso-titulo{
+        font-size: 1.2rem;
+    }
+
+    .paso-descripcion{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px){
+    .contenido-contacto{
+        padding: 20px 12px;
+        gap: 40px;
+    }
+
+    .hero-seccion-contacto, .contacto-seccion-correo{
+        padding: 25px 20px;
+    }
+
+    .hero-seccion-contacto h2{
+        font-size: 1.7rem;
+    }
+
+    .contacto-bloque .correo-texto{
+        font-size: 1.1rem;
+    }
+}
