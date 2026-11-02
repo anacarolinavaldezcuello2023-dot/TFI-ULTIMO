@@ -34,102 +34,41 @@
         h3 {
             color: #0369a1;
             margin-top: 30px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
         }
 
-        /* Estilo Desplegable para la pregunta con tonos claros */
-        details.desplegable-pregunta {
-            background-color: #f8fafc;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            padding: 14px 18px;
-            margin-top: 15px;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
+        .bloque-clase {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
         }
-        details.desplegable-pregunta:hover {
-            background-color: #f1f5f9;
+
+        .bloque-clase:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
         }
-        details.desplegable-pregunta summary {
-            font-size: 1.15em;
-            font-weight: bold;
-            color: #0369a1;
-            outline: none;
-        }
-        details.desplegable-pregunta p {
-            margin-top: 12px;
-            padding-top: 10px;
-            border-top: 1px solid #e2e8f0;
+
+        .bloque-clase p {
             color: #334155;
             line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
         }
 
-        /* Estilo Abanico / Desplegable para Tipos de Robots en tonos claros */
-        .contenedor-abanico {
-        .contenido-abanico img {
-            width: 220px;
-            height: 150px;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 8px;
-            flex-shrink: 0;
-            border: 1px solid #cbd5e1;
-            image-rendering: auto;
+        .video-clase-contenedor {
+            width: 100%;
+            max-width: 700px;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto;
         }
 
-        @media (max-width: 600px) {
-        .contenido-abanico {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .contenido-abanico img {
-           width: 100%;
-           height: auto;
-           aspect-ratio: 16 / 10;
-        }
-        }
-        }
-        .tarjeta-robot-abanico {
-            background-color: #f8fafc;
-            border: 1px solid #cbd5e1;
+        .video-clase-contenedor iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
             border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.2s ease;
-        }
-        .tarjeta-robot-abanico:hover {
-            border-color: #0284c7;
-        }
-        .tarjeta-robot-abanico summary {
-            padding: 14px 18px;
-            font-weight: bold;
-            color: #1e293b;
-            cursor: pointer;
-            background-color: #f1f5f9;
-        }
-        .tarjeta-robot-abanico summary:hover {
-            background-color: #e2e8f0;
-            color: #0369a1;
-        }
-        .contenido-abanico {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 18px 20px;
-            background-color: #ffffff;
-            border-top: 1px solid #e2e8f0;
-        }
-        .contenido-abanico img {
-            width: 130px;
-            height: 95px;
-            object-fit: cover;
-            border-radius: 6px;
-            flex-shrink: 0;
-            border: 1px solid #cbd5e1;
-        }
-        .contenido-abanico p {
-            margin: 0;
-            color: #334155;
-            line-height: 1.5;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
@@ -143,75 +82,40 @@
     <main class="contenido-principal">
         <h2>Clase 1: Descubriendo la Robótica</h2>
 
-        <!-- ¿Qué es la robótica? desplegable -->
-    <section>
-    <details class="desplegable-pregunta">
-        <summary>¿Qué es la robótica?</summary>
-        <p>La robótica es una ciencia y rama de la tecnología que combina disciplinas como la ingeniería mecánica, la ingeniería electrónica, la ciencia de la computación y la inteligencia artificial. Su objetivo principal es el diseño, construcción, operación y aplicación de robots para realizar tareas automatizadas, asistir a los seres humanos o explorar entornos complejos</p>
+        <!-- BLOQUE 1 -->
+        <section class="bloque-clase">
+            <h3>Bloque 1: ¿Qué es la Robótica?</h3>
+            <p>En este video analizaremos el concepto formal de la robótica como disciplina mecatrónica, explorando cómo se integran la mecánica, la electrónica y la programación para dar vida a sistemas automatizados inteligentes.</p>
+            <div class="video-clase-contenedor">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/idlq3cGLNo4?si=M5m_oP895H7Ky69p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
-        <div class="video-clase-contenedor">
-            <iframe src="https://www.youtube.com/embed/idlq3cGLNo4?si=LXIhr3dCF_hOAPH6" title="Definición de robótica y robot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-     </details>
-    </section>
+        <!-- BLOQUE 2 -->
+        <section class="bloque-clase">
+            <h3>Bloque 2: Clasificación y Tipos de Robots</h3>
+            <p>Aprenderemos a clasificar los diferentes tipos de robots que existen en la actualidad, desde los manipuladores industriales y los robots móviles, hasta los humanoides y los entornos de robótica educativa.</p>
+            <div class="video-clase-contenedor">
+                <iframe src="https://youtube.com" title="Clasificación y Tipos de Robots" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
-    <style>
-    .video-clase-contenedor {
-        width: 100%;
-        max-width: 700px;
-        aspect-ratio: 16 / 9;
-        margin: 15px auto 0;
-    }
+        <!-- BLOQUE 3 -->
+        <section class="bloque-clase">
+            <h3>Bloque 3: Definición y Clasificación de Sensores y Actuadores</h3>
+            <p>Veremos cómo interactúa un robot con el mundo real. El video explica el funcionamiento de los sensores para recibir información del entorno y cómo los actuadores ejecutan movimientos o acciones físicas concretas.</p>
+            <div class="video-clase-contenedor">
+                <iframe src="https://youtube.com" title="Sensores y Actuadores" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
-    .video-clase-contenedor iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        border-radius: 8px;
-    }
-     </style>
-
-        <!-- Tipos de robots en abanico -->
-        <section>
-            <h3>Tipos de Robots</h3>
-            
-            <div class="contenedor-abanico">
-    <!-- Robots Industriales -->
-    <details class="tarjeta-robot-abanico">
-        <summary>Robots Industriales</summary>
-        <div class="contenido-abanico">
-            <img src="../../images/robot-industrial.jpg" alt="Robots Industriales">
-            <p>Empleados en fábricas y cadenas de montaje para tareas repetitivas de alta precisión, como soldadura, ensamblaje y pintura.</p>
-        </div>
-    </details>
-
-    <!-- Robots de Servicios -->
-    <details class="tarjeta-robot-abanico">
-        <summary>Robots de Servicios</summary>
-        <div class="contenido-abanico">
-            <img src="../../images/robot-servicio.jpg" alt="Robots de Servicios">
-            <p>Orientados a asistir directamente a las personas, ya sea en el ámbito doméstico (aspiradoras inteligentes) o en el profesional (medicina, logística y hotelería).</p>
-        </div>
-    </details>
-
-    <!-- Robots Móviles -->
-    <details class="tarjeta-robot-abanico">
-        <summary>Robots Móviles</summary>
-        <div class="contenido-abanico">
-            <img src="../../images/robot-movil.jpg" alt="Robots Móviles">
-            <p>Dotados de sistemas de locomoción (ruedas, orugas o patas) que les permiten desplazarse de manera autónoma o controlada por terrenos diversos.</p>
-        </div>
-    </details>
-
-    <!-- Robots Humanoides -->
-    <details class="tarjeta-robot-abanico">
-        <summary>Robots Humanoides</summary>
-        <div class="contenido-abanico">
-            <img src="../../images/robot-humanoide.jpg" alt="Robots Humanoides">
-            <p>Diseñados para imitar la morfología y los movimientos del ser humano, facilitando una interacción más natural en entornos sociales.</p>
-        </div>
-    </details>
-</div>
+        <!-- BLOQUE 4 -->
+        <section class="bloque-clase">
+            <h3>Bloque 4: Introducción a Arduino</h3>
+            <p>Una primera aproximación a la placa Arduino UNO. Conoceremos sus componentes principales, cómo realizar conexiones eléctricas básicas utilizando una protoboard y la diferencia fundamental entre pines de entrada y salida.</p>
+            <div class="video-clase-contenedor">
+                <iframe src="https://youtube.com" title="Introducción a Arduino" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
